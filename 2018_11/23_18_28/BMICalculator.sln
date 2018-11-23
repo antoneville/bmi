@@ -28,7 +28,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {023C9662-440C-4E28-8DB7-0746ADBDDE4E}
 	EndGlobalSection
-	GlobalSection(NDepend) = preSolution
-		Project = ".\BMICalculator.ndproj"
-	EndGlobalSection
 EndGlobal

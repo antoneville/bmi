@@ -56,6 +56,32 @@ namespace BMICalculator
             }
         }
 
+        //Added Feature
+        public String BMIWeightCheck
+        {
+            get
+            {
+                double bmi = this.BMIValue;
+
+                if (bmi <= UnderWeightUpperLimit)
+                {
+                    return String.Format("Warning: You are under weight.");
+                }
+                else if (bmi <= NormalWeightUpperLimit)
+                {
+                    return String.Format("Success: You seem to be a healthy weight.");
+                }
+                else if (bmi <= OverWeightUpperLimit)
+                {
+                    return String.Format("Warning: You are over weight.");
+                }
+                else
+                {
+                    return String.Format("Critical Warning: You are severly over weight.");
+                }
+            }
+        }
+
         // calculate BMI category 
         [Display(Name = "Your BMI Category is")]
         public BMICategory BMICategory
